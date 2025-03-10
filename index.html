@@ -1,1 +1,74 @@
-<h1>Hello World, this is Bane's website</h1>
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Saya</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1, h2 {
+            color: #333;
+        }
+        .profile img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .projects, .interests {
+            text-align: left;
+        }
+        .projects ul, .interests ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .projects li, .interests li {
+            background: #e0e0e0;
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="profile.jpg" alt="Foto Profil">
+            <h1>Nama Saya</h1>
+            <p>Mahasiswa Teknologi Informasi | Pengembang Web Pemula</p>
+        </div>
+        
+        <h2>Proyek Saya</h2>
+        <div class="projects">
+            <ul>
+                <li>Website E-Commerce (Laravel)</li>
+                <li>CTF Binary Exploitation Challenges</li>
+                <li>Website Laptop Store (Laravel + Breeze)</li>
+            </ul>
+        </div>
+        
+        <h2>Minat Saya</h2>
+        <div class="interests">
+            <ul>
+                <li>Cybersecurity & CTF</li>
+                <li>Pengembangan Web (Frontend & Backend)</li>
+                <li>Machine Learning & Data Science</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
