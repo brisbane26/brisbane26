@@ -1,0 +1,117 @@
+body {
+    background-color: #000;
+    color: #fff;
+}
+
+header {
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+}
+
+section {
+    padding: 20px;
+    background-color: #222;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+h2 {
+    color: #fff;
+}
+
+.project {
+    margin-bottom: 20px;
+}
+
+.img-fluid {
+    display: block; 
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.profile-img:hover, .project-img:hover {
+    transform: scale(1.02);
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    color: #000;
+}
+
+#about {
+    display: flex;
+    align-items: center;
+}
+
+.profile-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0; 
+}
+
+.profile-img {
+    border-radius: 10%;
+    width: 100px; 
+    height: 160px; 
+    object-fit: cover; 
+}
+
+.profile-name {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px; 
+}
+
+#about img {
+    border-radius: 10%;
+}
+
+.animated-text-container {
+    width: 200px;  /* Pastikan cukup lebar untuk teks */
+    height: 40px;  /* Jaga tinggi tetap */
+    display: flex;
+}
+
+.animated-text {
+    color: yellow;
+    font-size: 24px;
+    font-weight: bold;
+    white-space: nowrap; /* Mencegah teks pindah baris */
+}
+
+
+.container .row.text-center i {
+    margin-top: 15px;
+}
+
+.social-icons {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(200, 200, 200, 0.2); 
+    padding: 15px;
+    border-radius: 0 10px 10px 0; 
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.3); 
+}
+
+.social-icon {
+    margin: 10px 0;
+    color: #fff;
+    font-size: 30px;
+    transition: color 0.3s;
+}
+
+.social-icon:hover {
+    color: #f39c12; 
+}
+
