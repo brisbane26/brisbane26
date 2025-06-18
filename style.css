@@ -1,7 +1,17 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #000;
     color: #fff;
+    padding-top: 15px; 
 }
+
+section[id] {
+    scroll-margin-top: 15px; /* Harus sama dengan padding-top di body atau tinggi navbar */
+}
+
 
 header {
     background-color: #fff;
@@ -25,7 +35,7 @@ h2 {
 }
 
 #projects {
-    margin-top: 50px;
+    margin-top: 50px; /* Ini mungkin perlu disesuaikan atau dihapus jika `scroll-margin-top` sudah bekerja */
 }
 
 .img-fluid {
@@ -136,7 +146,7 @@ footer {
     width: 200px;  
     height: 40px;  
     display: flex;
-    align-items: center; /* Tambahkan ini untuk vertikal alignment */
+    align-items: center;
 }
 
 .animated-text {
@@ -146,10 +156,9 @@ footer {
     white-space: nowrap; 
 }
 
-/* Perbaikan untuk alignment hello world dan download CV */
 #about > div > .d-flex.justify-content-between.align-items-center.mb-3 {
-    align-items: center; /* Memastikan item-item sejajar di tengah secara vertikal */
-    flex-wrap: wrap; /* Izinkan item untuk wrap ke baris berikutnya di layar kecil */
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .container .row.text-center img {
@@ -222,8 +231,8 @@ h6 {
     background-color: #681cf5;
     color: white;
     cursor: pointer;
-    padding: 10px;
-    border-radius: 10%;
+    padding: 15px;
+    border-radius: 50%;
     font-size: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: background-color 0.3s, opacity 0.3s;
@@ -300,7 +309,6 @@ h6 {
         height: auto;
         justify-content: center;
         margin-bottom: 10px;
-        /* align-items: center; -- Ini sudah ada di global, bisa di-override jika perlu */
     }
     
     .animated-text {
@@ -308,11 +316,10 @@ h6 {
         text-align: center;
     }
 
-    /* Perbaikan untuk alignment hello world dan download CV di mobile */
     #about > div > .d-flex.justify-content-between.align-items-center.mb-3 {
-        flex-direction: column; /* Ubah ke kolom agar sejajar vertikal */
-        align-items: center; /* Pusatkan item secara horizontal */
-        width: 100%; /* Pastikan kontainer mengambil seluruh lebar */
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
     }
 
     .download-cv-btn {
