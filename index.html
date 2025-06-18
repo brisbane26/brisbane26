@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio</title>
-    <!-- Bootstrap CSS -->
+    <title>Portfolio</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -14,7 +12,7 @@
 
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <a class="navbar-brand" href="#">Portofolio</a>
+        <a class="navbar-brand" href="#">Portfolio</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -35,67 +33,79 @@
 </header>
 
 <div class="container">
-    <section id="about" class="d-flex align-items-center" style="min-height: 300px;">
-        <div class="mr-3 text-center profile-container">
-            <img src="assets/img/profil.jpg" alt="Foto Saya" class="img-fluid profile-img">
-            <h5 class="profile-name">Brisbane Jovan <br>Rivaldi Sihombing</h5> 
-        </div>
-        <div>
-            <div class="animated-text-container">
-                <h2 class="animated-text"></h2>
+    <section id="about-wrapper"> <div id="about" class="d-flex align-items-center">
+            <div class="mr-3 text-center profile-container">
+                <img src="assets/img/profil.jpg" alt="Foto Saya" class="img-fluid profile-img">
+                <h5 class="profile-name">Brisbane Jovan <br>Rivaldi Sihombing</h5> 
             </div>
-            <h6>
-                Mahasiswa Teknologi Informasi dengan minat kuat dalam pemrograman. Memiliki pemahaman 
-                yang baik tentang sistem basis data, pemrograman berorientasi objek, dan pemrograman web. 
-                Berpengalaman sebagai ketua tim dalam proyek tugas besar yang mengembangkan kemampuan 
-                kepemimpinan, komunikasi, manajemen waktu, dan pemecahan masalah yang baik. Bersemangat 
-                untuk terus belajar, menerapkan, dan berbagi pengetahuan untuk terus berkembang.
-            </h6>
+            <div>
+                <div class="d-flex justify-content-between align-items-center mb-3">
+                    <div class="animated-text-container">
+                        <h2 class="animated-text"></h2>
+                    </div>
+                    <button class="btn btn-primary download-cv-btn" data-toggle="modal" data-target="#cvPreviewModal">
+                        <i class="fas fa-file-download mr-2"></i> Download My CV
+                    </button>
+                </div>
+                <h6>
+                    I'm an Information Technology student with a strong interest in cybersecurity and artificial intelligence, especially in exploring how both fields can intersect and support each other. 
+                    I actively learn cybersecurity through online courses and CTF competitions, focusing on areas such as network security, vulnerability assessment, and penetration testing using tools like Nmap and Wireshark. <br><br>
+                    With a solid foundation in web development, database systems, and Linux environments, I am eager to contribute to the cybersecurity field through continuous learning and hands-on practice. 
+                    I am committed to growing both technically and personally to help strengthen digital security and support a safer technology ecosystem.
+                </h6>
+            </div>
         </div>
-    </section>    
-
+    </section>
     <h2 class="text-center">Technologies Used:</h2>
 <div class="container">
     <div class="row text-center">
         <div class="col-md-2 col-4">
-            <i class="fab fa-html5" style="font-size: 50px; color: red;"></i>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" class="tech-icon" alt="HTML5" />
             <div>HTML5</div>
         </div>
         <div class="col-md-2 col-4">
-            <i class="fab fa-css3-alt" style="font-size: 50px; color: blue;"></i>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" class="tech-icon" alt="CSS3" />
             <div>CSS3</div>
         </div>
         <div class="col-md-2 col-4">
-            <i class="fab fa-js-square" style="font-size: 50px; color: yellow;"></i>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" class="tech-icon" alt="JavaScript" />
             <div>JavaScript</div>
         </div>
         <div class="col-md-2 col-4">
-            <i class="fab fa-laravel" style="font-size: 50px; color: rgb(191, 68, 16);"></i>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg" class="tech-icon" alt="Laravel" />
             <div>Laravel</div>
         </div>
         <div class="col-md-2 col-4">
-            <i class="fab fa-python" style="font-size: 50px; color: orange;"></i>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" class="tech-icon" alt="Python" />
             <div>Python</div>
         </div>
         <div class="col-md-2 col-4">
-            <i class="fab fa-git" style="font-size: 50px; color: rgb(190, 68, 16);"></i>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg" class="tech-icon" alt="Git" />
             <div>Git</div>
         </div>
         <div class="col-md-2 col-4">
-            <i class="fab fa-php" style="font-size: 50px; color: rgb(240, 233, 235);"></i>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" class="tech-icon" alt="PHP" />
             <div>PHP</div>
         </div>
         <div class="col-md-2 col-4">
-            <i class="fab fa-java" style="font-size: 50px; color: rgb(51, 57, 221);"></i>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" class="tech-icon" alt="Java" />
             <div>Java</div>
         </div>
         <div class="col-md-2 col-4">
-            <i class="fas fa-database" style="font-size: 50px; color: #00758f;"></i>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" class="tech-icon" alt="MySQL" />
             <div>MySQL</div>
         </div>
         <div class="col-md-2 col-4">
-            <i class="fab fa-figma" style="font-size: 50px; color: #7081f2;"></i>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" class="tech-icon" alt="Figma" />
             <div>Figma</div>
+        </div>
+        <div class="col-md-2 col-4">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" class="tech-icon" alt="Linux" />
+            <div>Linux</div>
+        </div>
+        <div class="col-md-2 col-4">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/windows11/windows11-original.svg" class="tech-icon" alt="Figma" />
+            <div>Windows</div>
         </div>
     </div>
 </div>
@@ -104,54 +114,132 @@
         <h2>Projects:</h2>
 
         <div class="project">
-            <h4>Project 1: Aplikasi Web Point of Sales (POS)</h4>
+            <h4>Project 1: Point of Sales Web Application (POS)</h4>
             <img src="assets/img/project1.png" alt="Project 1" class="img-fluid project-img">
             <p class="mt-3">
-                POS (Point of Sales) adalah sistem yang digunakan untuk mencatat, memproses, dan mengelola transaksi di toko Anda. Becare sebagai aplikasi POS mempermudah pekerjaan admin dan kasir, meningkatkan akurasi, serta mempercepat layanan kepada pelanggan.
+                POS (Point of Sales) is a system used to record, process, and manage transactions in your store. Becare, as a POS application, simplifies the work of admins and cashiers, improves accuracy, and speeds up customer service.
             </p>
         </div>
 
         <div class="project">
-            <h4>Project 2: Aplikasi Web E-Ticket</h4>
+            <h4>Project 2: E-Ticket Web Application</h4>
             <img src="assets/img/project2.png" alt="Project 2" class="img-fluid project-img">
             <p class="mt-3">
-                Aplikasi ini adalah solusi terbaik untuk sistem pemesanan tiket kereta api secara modern, efisien, dan praktis. Sonic menghadirkan fitur lengkap untuk menjual tiket kereta api, mulai dari manajemen tiket, pesanan, transaksi, hingga keluhan pelanggan.
+                This application is the best solution for a modern, efficient, and practical train ticket booking system. Sonic offers complete features for selling train tickets, from ticket management, orders, transactions, to customer complaints.
             </p>
         </div>
 
         <div class="project">
-            <h4>Project 3: Aplikasi Web E-Commerce</h4>
+            <h4>Project 3: E-Commerce Web Application</h4>
             <img src="assets/img/project3.png" alt="Project 3" class="img-fluid project-img">
             <p class="mt-3">
-                Aplikasi ini dirancang untuk mendukung transaksi e-commerce yang cepat, aman, dan efisien.
-                Laptop Store Medan ini sudah terintegrasi dengan API RajaOngkir untuk mempermudah perhitungan ongkos kirim, sehingga sangat cocok untuk toko online di Indonesia. 
+                This application is designed to support fast, secure, and efficient e-commerce transactions.
+                Laptop Store Medan is integrated with the RajaOngkir API to simplify shipping cost calculations, making it highly suitable for online stores in Indonesia.
             </p>
         </div>
+        
+        <div class="project">
+            <h4>Project 4: Car Web Application</h4>
+            <img src="assets/img/project4.png" alt="Project 4" class="img-fluid project-img">
+            <p class="mt-3">
+                Carverse is a semantic web application that allows users to search for information about cars from various manufacturers. 
+                This application leverages semantic web technology to retrieve car-related data, enabling users to find more in-depth and structured information about the cars they are looking for. 
+            </p>
+        </div>
+
+        <div class="project">
+            <h4>Project 5: Sports Mobile App Design</h4>
+            <img src="assets/img/project5.png" alt="Project 5" class="img-fluid project-img project-img-vertical">
+            <p class="mt-3">
+                SPORTIFY is a mobile application prototype created to help users engage in sports activities in an easy, informative, and fun way. 
+                SPORTIFY was designed and developed using Figma, focusing on an intuitive user experience and an attractive interface. 
+            </p>
+        </div>
+
+        <div class="project">
+            <h4>Project 6: Hall Booking and Management Web Application</h4>
+            <img src="assets/img/project6.png" alt="Project 6" class="img-fluid project-img">
+            <p class="mt-3">
+                The Jambur Tamsaka Web Application is an information system designed to simplify and digitize the entire booking and operational management process of Jambur Tamsaka. 
+                This system allows prospective renters to access information on building availability, view service package details, and make online bookings easily. 
+                For managers, this application provides features to manage Jambur usage schedules, record customer data, log transactions, and generate reports automatically, replacing the previously inefficient manual system. 
+            </p>
+        </div>
+
+        <div class="project">
+            <h4>Project 7: Server Infrastructure Configuration</h4>
+            <img src="assets/img/project7.png" alt="Project 7" class="img-fluid project-img">
+            <p class="mt-3">
+                Configured a complete server environment on a local network consisting of a DNS server, FTP server, database server, and web server for training and simulation purposes.
+                Planned the server architecture, configured DNS using BIND9, and ensured name resolution across all servers in the network. 
+            </p>
+        </div>
+        
     </section>
 
     <section id="skills">
         <h2>Skills:</h2>
         <ul>
-            <li>Web Programming</li>
-            <li>Object-Oriented Programming (OOP)</li>
-            <li>Database Management</li>
-            <li>Application Design</li>
+            <li>Basic Cybersecurity</li>
+            <li>Web Development</li>
+            <li>Operating Systems (Linux, Windows)</li>
+            <li>Design</li>
         </ul>
     </section>
+
+    <section id="badges">
+        <h2>Badges:</h2>
+        <div class="row text-center">
+            <div class="col-md-4 col-4 badge-image">
+                <img src="assets/img/badge1.png" alt="Badge 1" class="img-fluid badge-img">
+            </div>
+            <div class="col-md-4 col-4 badge-image">
+                <img src="assets/img/badge2.png" alt="Badge 2" class="img-fluid badge-img">
+            </div>
+            <div class="col-md-4 col-4 badge-image">
+                <img src="assets/img/badge3.png" alt="Badge 3" class="img-fluid badge-img">
+            </div>
+        </div>
+    </section>
+</div>
+
+<div id="backToTopBtn" title="Go to top">
+    <i class="fas fa-arrow-up"></i>
 </div>
 
 <div class="social-icons">
     <a href="https://github.com/brisbane26" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
-    <a href="https://www.linkedin.com/in/brisbane-j-r-sihombing-a58424262" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
     <a href="https://www.instagram.com/brisbanejrs" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
-    <a href="mailto:brisbanejrsihombing@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a>   
+    <a href="https://www.linkedin.com/in/brisbane-j-r-sihombing-a58424262" target="_blank" class="social-icon"><i class="fab fa-linkedin"></i></a>
+    <a href="mailto:brisbanejrsihombing@gmail.com" class="social-icon"><i class="fas fa-envelope"></i></a> 
 </div>
 
 <footer>
     <p>&copy; 2025. All rights reserved.</p>
 </footer>
 
-<!-- Bootstrap JS and dependencies -->
+<div class="modal fade" id="cvPreviewModal" tabindex="-1" role="dialog" aria-labelledby="cvPreviewModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content bg-dark text-white">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cvPreviewModalLabel">CV Preview</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true" class="text-white">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <iframe id="cvPreviewFrame" src="assets/cv/cv_brisbane.pdf" style="width:100%; height:500px; border:none;"></iframe>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <a id="directDownloadLink" href="assets/cv/cv_brisbane.pdf" download class="btn btn-success">
+                    <i class="fas fa-download mr-2"></i> Download CV
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>

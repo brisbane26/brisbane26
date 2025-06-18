@@ -24,16 +24,21 @@ h2 {
     margin-bottom: 20px;
 }
 
+#projects {
+    margin-top: 50px;
+}
+
 .img-fluid {
     display: block; 
     margin: 0 auto;
-    width: 80%;
+    width: 60%;
     height: auto;
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .profile-img:hover, .project-img:hover {
     transform: scale(1.02);
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.5);
 }
 
 footer {
@@ -43,10 +48,64 @@ footer {
     color: #000;
 }
 
+/* --- Bagian About yang Diubah untuk Border Bergerak --- */
+#about-wrapper {
+    position: relative;
+    margin-top: 50px;
+    padding: 5px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: transparent !important;
+}
+
+#about-wrapper::before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    z-index: 1;
+    border-radius: 12px;
+
+    background: conic-gradient(
+        from 0deg,
+        #ff0000, 
+        #ffa500, 
+        #ffff00, 
+        #008000, 
+        #0000ff, 
+        #4b0082, 
+        #ee82ee, 
+        #ff0000 
+    );
+    
+    animation: putarWarna 4s linear infinite;
+    filter: blur(8px);
+    opacity: 0.8;
+}
+
 #about {
+    position: relative;
+    z-index: 2;
     display: flex;
     align-items: center;
+    min-height: 300px;
+    background-color: #222;
+    border-radius: 8px;
+    padding: 20px;
 }
+
+@keyframes putarWarna {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+/* --- Akhir Bagian About yang Diubah --- */
+
 
 .profile-container {
     display: flex;
@@ -74,21 +133,38 @@ footer {
 }
 
 .animated-text-container {
-    width: 200px;  /* Pastikan cukup lebar untuk teks */
-    height: 40px;  /* Jaga tinggi tetap */
+    width: 200px;  
+    height: 40px;  
     display: flex;
+    align-items: center; /* Tambahkan ini untuk vertikal alignment */
 }
 
 .animated-text {
     color: yellow;
     font-size: 24px;
     font-weight: bold;
-    white-space: nowrap; /* Mencegah teks pindah baris */
+    white-space: nowrap; 
 }
 
+/* Perbaikan untuk alignment hello world dan download CV */
+#about > div > .d-flex.justify-content-between.align-items-center.mb-3 {
+    align-items: center; /* Memastikan item-item sejajar di tengah secara vertikal */
+    flex-wrap: wrap; /* Izinkan item untuk wrap ke baris berikutnya di layar kecil */
+}
 
-.container .row.text-center i {
+.container .row.text-center img {
     margin-top: 15px;
+}
+
+.tech-icon {
+    width: 50px;
+    height: 50px; 
+    margin-top: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tech-icon:hover {
+    transform: scale(1.2); 
 }
 
 .social-icons {
@@ -112,9 +188,258 @@ footer {
 }
 
 .social-icon:hover {
-    color: #f39c12; 
+    color: #681cf5; 
 }
 
 .navbar {
     padding: 15px;
+}
+
+h6 {
+    text-align: justify;
+}
+
+.project-img-vertical {
+    max-height: 400px; 
+    width: auto; 
+    object-fit: contain; 
+}
+
+.project-img {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/* Back to Top Button */
+#backToTopBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: #681cf5;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10%;
+    font-size: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, opacity 0.3s;
+    opacity: 0.8;
+}
+
+#backToTopBtn:hover {
+    background-color: #380167;
+    opacity: 1;
+}
+
+.project p {
+    text-align: justify;
+}
+
+.badge-image {
+    display: block; 
+    margin: 0 auto;
+    width: 60%;
+    height: auto;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.badge-img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.5);
+}
+
+.modal-body {
+    max-height: 60vh;
+    overflow-y: auto;
+}
+
+#cvPreviewFrame {
+    width: 100%;
+    height: 100%;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+/* --- Media Queries untuk Responsifitas --- */
+
+/* Untuk layar dengan lebar kurang dari atau sama dengan 768px (Tablet dan Mobile) */
+@media (max-width: 768px) {
+    /* Navbar akan otomatis responsif berkat Bootstrap */
+
+    /* Bagian About */
+    #about {
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .profile-container {
+        margin-right: 0 !important;
+        margin-bottom: 20px;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+    }
+
+    .profile-name {
+        font-size: 1.1em;
+    }
+
+    .animated-text-container {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+        margin-bottom: 10px;
+        /* align-items: center; -- Ini sudah ada di global, bisa di-override jika perlu */
+    }
+    
+    .animated-text {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    /* Perbaikan untuk alignment hello world dan download CV di mobile */
+    #about > div > .d-flex.justify-content-between.align-items-center.mb-3 {
+        flex-direction: column; /* Ubah ke kolom agar sejajar vertikal */
+        align-items: center; /* Pusatkan item secara horizontal */
+        width: 100%; /* Pastikan kontainer mengambil seluruh lebar */
+    }
+
+    .download-cv-btn {
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    #about > div:not(.profile-container) {
+        padding: 0;
+    }
+
+    /* Technologies Used */
+    .container .row.text-center .col-md-2 {
+        flex: 0 0 33.333333%;
+        max-width: 33.333333%;
+    }
+
+    .tech-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    /* Projects */
+    .project img {
+        width: 90%;
+    }
+
+    .project-img-vertical {
+        max-height: 250px;
+    }
+
+    /* Social Icons */
+    .social-icons {
+        position: static;
+        transform: none;
+        flex-direction: row;
+        justify-content: center;
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 20px;
+        background-color: rgba(200, 200, 200, 0.1);
+    }
+
+    .social-icon {
+        margin: 0 10px;
+        font-size: 24px;
+    }
+
+    /* Back to Top Button */
+    #backToTopBtn {
+        bottom: 20px;
+        right: 20px;
+        padding: 12px;
+        font-size: 18px;
+    }
+
+    /* Badges */
+    .badge-image {
+        width: 80%;
+    }
+
+    /* Footer */
+    footer {
+        padding: 15px;
+        font-size: 0.9em;
+    }
+
+    /* Modal */
+    .modal-dialog {
+        margin: 10px;
+    }
+
+    .modal-body {
+        max-height: 70vh;
+    }
+}
+
+/* Untuk layar dengan lebar kurang dari atau sama dengan 576px (Hanya Mobile) */
+@media (max-width: 576px) {
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #about-wrapper {
+        padding: 3px;
+    }
+
+    #about-wrapper::before {
+        top: -5px; 
+        left: -5px; 
+        right: -5px; 
+        bottom: -5px; 
+        filter: blur(5px);
+    }
+
+    #about {
+        padding: 15px;
+    }
+
+    .profile-img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .profile-name {
+        font-size: 1em;
+    }
+
+    .animated-text {
+        font-size: 1.2em;
+    }
+
+    h6 {
+        font-size: 0.9em;
+    }
+
+    .tech-icon {
+        width: 35px;
+        height: 35px;
+    }
+
+    .social-icon {
+        font-size: 20px;
+    }
+
+    .project img {
+        width: 95%;
+    }
 }
