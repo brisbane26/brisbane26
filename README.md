@@ -34,6 +34,6 @@
 
 ### Let's connect:
 <div align="center">
-<a href="https://www.linkedin.com/in/brisbane-j-r-sihombing-a58424262"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="image"></a>
+<a href="https://www.linkedin.com/in/brisbane-jovan-rivaldi-sihombing-a58424262"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&amp;logo=linkedin&amp;logoColor=white" alt="image"></a>
 <a href="mailto:produtor.brisbanejrsihombing@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&amp;logo=gmail&amp;logoColor=white" alt="image"></a>
 </div>
